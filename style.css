@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#center{
+    height: 600px;
+    width: 1000px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.imagediv{
+    height: 300px;
+    width: 200px;
+    /* background-color: red; */
+    position: absolute;
+    overflow: hidden;
+}
+
+.imagediv img{
+    transform: translateY(90%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* we can also add a rotation of images and using gsap we can make it based on the location of the cursor, either on left half then rotate left ,if on right half then rotate right */
